@@ -63,9 +63,9 @@ while count < 10000:
         print(element2.text)
         DataList.append(element2.text)
         element.click()
-        time.sleep(6)
         print(driver.current_url)
         BenchMarkList.append(driver.current_url)
+        time.sleep(6)
         like(driver)
         driver.find_element_by_xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "close", " " ))]').click()
 #     if count % 25 == 0:
